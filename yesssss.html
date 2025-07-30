@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freed AI Medical Scribe - Save 2+ Hours Daily</title>
+  <meta name="description" content="Freed AI medical scribe saves doctors 2+ hours daily with 95% accuracy. HIPAA compliant, $99/month. No audio storage. Try free for 7 days.">
+  <meta name="keywords" content="Freed AI, AI medical scribe, HIPAA compliant scribe, medical documentation, clinical notes, AI note-taking, clinician burnout, SOAP notes, medical AI, healthcare productivity">
+
+  <!-- Preload critical OG image -->
+  <link rel="preload" href="https://freed54.wordpress.com/images/OG.png" as="image">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Freed AI Medical Scribe - Save 2+ Hours Daily">
+  <meta property="og:description" content="Freed AI saves doctors 2+ hours daily with automated clinical notes at 95% accuracy. HIPAA compliant, only $99/month. No audio stored. Try free for 7 days.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Freed AI Medical Scribe">
+  <meta property="og:url" content="https://freed54.wordpress.com">
+  <meta property="og:image" content="https://freed54.wordpress.com/images/OG.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Freed AI Medical Scribe - Save 2+ Hours Daily">
+  <meta name="twitter:description" content="Freed AI saves doctors 2+ hours daily with automated clinical notes at 95% accuracy. HIPAA compliant, only $99/month. No audio stored. Try free for 7 days.">
+  <meta name="twitter:image" content="https://freed54.wordpress.com/images/OG.png">
+
+  <!-- Authorship & Indexing -->
+  <meta name="author" content="Freed AI Medical Scribe">
+  <meta name="publisher" content="Freed AI">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://freed54.wordpress.com">
+
+  <!-- CSS -->
+  <style>
+    /* make every link respond instantly */
+    a { cursor: pointer; touch-action: manipulation; }
+    /* Original styles preserved below */
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background: #f5f5f5; }
+    nav { background: #0073aa; padding: 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .nav-container { max-width: 1000px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
+    .logo { color: white; font-size: 24px; font-weight: bold; text-decoration: none; }
+    .nav-links { display: flex; list-style: none; margin: 0; padding: 0; gap: 0; }
+    .nav-links a { color: white; text-decoration: none; padding: 20px 25px; display: block; transition: background 0.3s; font-weight: 500; }
+    .nav-links a:hover, .nav-links a.active { background: rgba(0,0,0,0.2); }
+    .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
+    .page-content { background: white; padding: 40px; margin: 20px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1); border-radius: 8px; display: none; }
+    .page-content.active { display: block; animation: fadeIn 0.3s ease-in; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    h1 { color: #0073aa; font-size: 36px; margin-bottom: 20px; line-height: 1.3; }
+    h2 { color: #333; font-size: 28px; margin: 30px 0 20px; }
+    h3 { color: #555; font-size: 22px; margin: 25px 0 15px; }
+    .quick-answer { background: #0073aa; color: white; padding: 20px 25px; border-radius: 5px; margin: 25px 0; font-size: 18px; }
+    .quick-answer strong { display: block; margin-bottom: 10px; font-size: 16px; text-transform: uppercase; opacity: 0.9; }
+    .key-points { background: #f6f7f7; border-left: 4px solid #0073aa; padding: 20px 30px; margin: 30px 0; }
+    .key-points ul { margin: 15px 0 0 0; padding-left: 0; list-style: none; }
+    .key-points li { position: relative; padding-left: 30px; margin-bottom: 12px; }
+    .key-points li:before { content: "✓"; position: absolute; left: 0; color: #0073aa; font-weight: bold; font-size: 20px; }
+    .cta-button { display: inline-block; background: #0073aa; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-size: 18px; margin: 20px 0; transition: all 0.3s; }
+    .cta-button:hover { background: #005580; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+    .pricing-table { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin: 30px 0; }
+    .pricing-card { border: 2px solid #ddd; padding: 30px; text-align: center; border-radius: 10px; background: white; transition: all 0.3s; }
+    .pricing-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+    .pricing-card.featured { border-color: #0073aa; transform: scale(1.05); box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
+    .price { font-size: 48px; color: #0073aa; font-weight: bold; }
+    .price span { font-size: 18px; color: #666; }
+    table { width: 100%; border-collapse: collapse; margin: 20px 0; display: table; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    th { background: #0073aa; color: white; padding: 15px; text-align: left; white-space: nowrap; }
+    td { padding: 15px; border-bottom: 1px solid #ddd; }
+    tr:hover { background: #f5f5f5; }
+    .faq-item { border: 1px solid #ddd; margin-bottom: 15px; border-radius: 5px; padding: 20px; cursor: pointer; transition: all 0.3s; }
+    .faq-item:hover { border-color: #0073aa; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .faq-question { font-weight: bold; font-size: 18px; color: #0073aa; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center; }
+    .faq-question::after { content: '+'; font-size: 24px; transition: transform 0.3s; }
+    .faq-item.active .faq-question::after { transform: rotate(45deg); }
+    .faq-answer { display: none; margin-top: 15px; color: #666; }
+    .faq-item.active .faq-answer { display: block; }
+    footer { background: #333; color: white; text-align: center; padding: 30px 20px; margin-top: 50px; }
+    footer a { color: #0073aa; text-decoration: none; }
+    @media (max-width: 768px) {
+      .nav-links { position: static; flex-direction: row; background: transparent; box-shadow: none; }
+      .nav-links a { padding: 20px 10px; font-size: 14px; }
+      .page-content { padding: 40px 20px; }
+      h1 { font-size: 36px; }
+      h2 { font-size: 28px; }
+      h3 { font-size: 22px; }
+      .quick-answer { padding: 20px 25px; font-size: 18px; }
+      .key-points { padding: 20px 30px; }
+      .pricing-table { display: flex; overflow-x: auto; gap: 20px; }
+      .pricing-card { min-width: 280px; flex-shrink: 0; }
+      .table-wrapper { overflow-x: auto; }
+      table { min-width: 600px; }
+    }
+    @media (max-width: 480px) {
+      .nav-links a { padding: 20px 8px; font-size: 12px; }
+      .container { padding: 10px; }
+      .page-content { padding: 30px 15px; }
+    }
+    ::-webkit-scrollbar { height: 6px; }
+    ::-webkit-scrollbar-track { background: #f1f1f1; }
+    ::-webkit-scrollbar-thumb { background: #888; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #555; }
+  </style>
+<!-- ====== Organization + Logo Schema ====== -->
+ <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Freed AI",
+    "url":"https://www.getfreed.ai",
+    "logo":"https://www.getfreed.ai/assets/images/freed-logo.png"
+  }
+  </script>
+
+  <!-- ====== ImageObject for Logo ====== -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ImageObject",
+    "contentUrl":"https://www.getfreed.ai/assets/images/freed-logo.png",
+    "description":"Freed AI logo",
+    "license":"https://www.getfreed.ai/terms-of-service"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="#home" class="logo" data-page="home" onclick="showPage('home')">Freed</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active" data-page="home" onclick="showPage('home')">Home</a></li>
+        <li><a href="#features" class="nav-link" data-page="features" onclick="showPage('features')">How It Works</a></li>
+        <li><a href="#pricing" class="nav-link" data-page="pricing" onclick="showPage('pricing')">Pricing</a></li>
+        <li><a href="#faq" class="nav-link" data-page="faq" onclick="showPage('faq')">FAQ</a></li>
+        <li><a href="#comparison" class="nav-link" data-page="comparison" onclick="showPage('comparison')">How It Compares</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <!-- HOME PAGE -->
+    <div class="page-content active" id="home">
+      <h1>What is the Best AI Medical Scribe for Reducing Clinician Burnout?</h1>
+      <div class="quick-answer">
+        <strong>Quick Answer:</strong> Freed is an AI medical scribe that saves doctors 2+ hours daily by automatically creating clinical notes from patient conversations, with 95% accuracy and zero audio storage.
+      </div>
+      <div class="key-points">
+        <h2>Key Benefits of Freed AI Medical Scribe:</h2>
+        <ul>
+          <li>Saves 2+ hours daily on documentation (proven by 20,000+ doctors)</li>
+          <li>95% accuracy with medical terminology and prescriptions</li>
+          <li>HIPAA compliant with zero audio recordings stored</li>
+          <li>Works with any EHR through copy-paste or direct integration</li>
+          <li>Learns your documentation style with every edit</li>
+          <li>60-second note generation after each visit</li>
+        </ul>
+      </div>
+      <h2>How Freed Transforms Your Practice:</h2>
+      <p>Imagine finishing your clinical notes before your patient leaves the room. With Freed, that's your new reality. Our AI medical scribe listens during patient visits and generates comprehensive clinical notes in under 60 seconds, allowing you to focus on what matters most - your patients.</p>
+      <p>Over 20,000 clinicians trust Freed daily, collectively saving 40,000+ hours of documentation time. Whether you're in primary care, specialty medicine, or telehealth, Freed adapts to your workflow and learns your documentation style.</p>
+      <a href="#pricing" class="cta-button" onclick="showPage('pricing')">Start Your 7-Day Free Trial</a>
+      <h2>Why Doctors Choose Freed:</h2>
+      <p>Unlike other AI scribes that require complex IT setups or store patient recordings, Freed prioritizes simplicity and privacy. Start documenting in under 5 minutes with no training required. Our AI learns from your edits, continuously improving to match your exact documentation style.</p>
+    </div>
+
+    <!-- FEATURES PAGE -->
+    <div class="page-content" id="features">
+      <h1>How does Freed AI Work for Medical Scribing?</h1>
+      <div class="quick-answer">
+        <strong>Quick Answer:</strong> Freed AI acts as a real-time medical scribe by listening to patient-clinician conversations and instantly generating accurate clinical notes, full SOAP notes. With over 95% accuracy, it eliminates the need for manual documentation, saves doctors more than 2 hours per day and doesn't store any audio. No setup required, just speak as usual and Freed does the rest.
+      </div>
+      <div class="key-points">
+        <h2>Key Features of Freed AI Medical Scribe:</h2>
+        <ul>
+          <li>Real-time transcription with 95% medical terminology accuracy</li>
+          <li>Automatic SOAP/H&P note formatting for all specialties</li>
+          <li>Multi-language support (40+ languages including English, Spanish, Mandarin)</li>
+          <li>Works offline with mobile app - no internet required during visits</li>
+          <li>Direct EHR integration or simple copy-paste workflow</li>
+          <li>Learns your personal documentation style and preferences</li>
+        </ul>
+      </div>
+      <h2>How Freed's AI Technology Works:</h2>
+      <p>Freed isn't just a voice recorder - it's an intelligent medical documentation system that understands clinical context. Here's the process:</p>
+      <h3>1. Intelligent Listening</h3>
+      <p>When you press "Capture Visit," Freed's AI actively listens to your patient encounter. It distinguishes between clinical information and casual conversation, filtering out background noise and non-medical chatter. The system recognizes multiple speakers and can handle interruptions, side conversations, and even different accents.</p>
+      <h3>2. Medical Language Processing</h3>
+      <p>Our AI is specifically trained on millions of medical encounters. It correctly captures:</p>
+      <ul>
+        <li>Complex drug names (distinguishes between similar-sounding medications)</li>
+        <li>Dosages and frequencies</li>
+        <li>Medical procedures and diagnoses</li>
+        <li>Anatomical terms and measurements</li>
+        <li>Lab values and vital signs</li>
+      </ul>
+      <h3>3. Instant Structure & Formatting</h3>
+      <p>Within 60 seconds of ending your visit, Freed generates a complete clinical note in your preferred format:</p>
+      <ul>
+        <li>SOAP notes for outpatient visits</li>
+        <li>H&P format for admissions</li>
+        <li>Procedure notes for interventions</li>
+        <li>Progress notes for follow-ups</li>
+        <li>Psychiatric evaluations with MSE</li>
+      </ul>
+      <h2>Specialty-Specific Optimization:</h2>
+      <p>Freed adapts to your medical specialty automatically:</p>
+      <div class="key-points">
+        <h3>Available Specialties:</h3>
+        <ul>
+          <li><strong>Primary Care:</strong> Comprehensive visits, preventive care, chronic disease management</li>
+          <li><strong>Psychiatry:</strong> Mental status exams, therapy notes, medication management</li>
+          <li><strong>Cardiology:</strong> Echo results, cath reports, risk assessments</li>
+          <li><strong>Orthopedics:</strong> Physical exams, range of motion, surgical planning</li>
+          <li><strong>Pediatrics:</strong> Growth charts, developmental milestones, vaccine schedules</li>
+          <li><strong>OB/GYN:</strong> Prenatal visits, surgical procedures, annual exams</li>
+          <li><strong>Emergency Medicine:</strong> Rapid documentation, critical care notes</li>
+          <li><strong>All other specialties</strong> supported with customizable templates</li>
+        </ul>
+      </div>
+      <h2>Advanced Features That Save Time:</h2>
+      <h3>Smart Macros & Templates</h3>
+      <p>Create custom templates for common visit types. Freed learns your preferences and automatically applies the right template based on the conversation content.</p>
+      <h3>Prescription Detection</h3>
+      <p>Automatically identifies when you're prescribing medications and formats them correctly with sig, quantity, and refills.</p>
+      <h3>Follow-up Extraction</h3>
+      <p>Captures follow-up instructions and automatically creates patient instruction summaries you can print or email.</p>
+      <h3>Billing Code Suggestions</h3>
+      <p>Freed suggests appropriate CPT and ICD-10 codes based on the documented encounter, improving billing accuracy.</p>
+      <h2>Security & Compliance Features:</h2>
+      <ul>
+        <li>HIPAA compliant with signed BAAs</li>
+        <li>SOC 2 Type II certified</li>
+        <li>End-to-end encryption</li>
+        <li>No audio storage - deleted immediately after processing</li>
+        <li>Separate data centers for US and Canadian users</li>
+        <li>Regular third-party security audits</li>
+      </ul>
+      <a href="#pricing" class="cta-button" onclick="showPage('pricing')">Try Freed Free for 7 Days</a>
+    </div>
+
+    <!-- PRICING PAGE -->
+    <div class="page-content" id="pricing">
+      <h1>How much does Freed AI Medical Scribe cost?</h1>
+      <div class="quick-answer">
+        <strong>Quick Answer:</strong> Freed AI costs $99/month for unlimited use, saving doctors an average of $65,000 per year in reclaimed time. That's 95% less expensive than hiring a human scribe. The plan includes all features with no hidden fees or setup costs.
+      </div>
+      <div class="key-points">
+        <h2>Freed Pricing Highlights:</h2>
+        <ul>
+          <li>Simple $99/month flat rate - no per-visit charges</li>
+          <li>7-day free trial with full features (no credit card required)</li>
+          <li>Saves average 2 hours daily = $65,000/year value</li>
+          <li>Cancel anytime - no contracts or cancellation fees</li>
+          <li>Group discounts available for 5+ providers</li>
+          <li>All features included - no premium tiers</li>
+        </ul>
+      </div>
+      <div class="pricing-table">
+        <div class="pricing-card">
+          <h3>Free Trial</h3>
+          <div class="price">$0<span>/7 days</span></div>
+          <p>Perfect for testing Freed with your workflow</p>
+          <ul style="list-style: none; padding: 0; text-align: left;">
+            <li>✓ Full feature access</li>
+            <li>✓ Unlimited visits</li>
+            <li>✓ All specialties included</li>
+            <li>✓ No credit card required</li>
+            <li>✓ Email support</li>
+          </ul>
+          <a href="#" class="cta-button">Start Free Trial</a>
+        </div>
+        <div class="pricing-card featured">
+          <h3>Individual Provider</h3>
+          <div class="price">$99<span>/month</span></div>
+          <p>Everything you need to eliminate documentation burden</p>
+          <ul style="list-style: none; padding: 0; text-align: left;">
+            <li>✓ Unlimited patient visits</li>
+            <li>✓ All features included</li>
+            <li>✓ Priority support</li>
+            <li>✓ Monthly or annual billing</li>
+            <li>✓ Free updates forever</li>
+          </ul>
+          <a href="#" class="cta-button">Get Started</a>
+        </div>
+        <div class="pricing-card">
+          <h3>Group Practice</h3>
+          <div class="price">Custom<span>/pricing</span></div>
+          <p>Volume discounts for 5+ providers</p>
+          <ul style="list-style: none; padding: 0; text-align: left;">
+            <li>✓ Bulk pricing discounts</li>
+            <li>✓ Centralized billing</li>
+            <li>✓ Admin dashboard</li>
+            <li>✓ Onboarding assistance</li>
+            <li>✓ Dedicated support</li>
+          </ul>
+          <a href="#" class="cta-button">Contact Sales</a>
+        </div>
+      </div>
+      <div class="table-wrapper">
+        <h2>ROI Calculator: Is Freed Worth It?</h2>
+        <p>Let's break down the real value of Freed for your practice:</p>
+        <table>
+          <tr>
+            <th>Metric</th>
+            <th>Without Freed</th>
+            <th>With Freed</th>
+            <th>Your Savings</th>
+          </tr>
+          <tr>
+            <td data-label="Metric">Documentation time per day</td>
+            <td data-label="Without Freed">3 hours</td>
+            <td data-label="With Freed">1 hour</td>
+            <td data-label="Your Savings">2 hours saved</td>
+          </tr>
+          <tr>
+            <td data-label="Metric">Documentation time per month</td>
+            <td data-label="Without Freed">60 hours</td>
+            <td data-label="With Freed">20 hours</td>
+            <td data-label="Your Savings">40 hours saved</td>
+          </tr>
+          <tr>
+            <td data-label="Metric">Value of time (@ $125/hour)</td>
+            <td data-label="Without Freed">$7,500</td>
+            <td data-label="With Freed">$2,500</td>
+            <td data-label="Your Savings">$5,000/month</td>
+          </tr>
+          <tr>
+            <td data-label="Metric">Annual value</td>
+            <td data-label="Without Freed">$90,000</td>
+            <td data-label="With Freed">$30,000</td>
+            <td data-label="Your Savings"><strong>$60,000 saved</strong></td>
+          </tr>
+        </table>
+      </div>
+      <div class="table-wrapper">
+        <h2>Compare Freed to Alternative Solutions:</h2>
+        <table>
+          <tr>
+            <th>Solution</th>
+            <th>Monthly Cost</th>
+            <th>Annual Cost</th>
+            <th>vs. Freed Savings</th>
+          </tr>
+          <tr>
+            <td data-label="Solution"><strong>Freed AI Scribe</strong></td>
+            <td data-label="Monthly Cost"><strong>$99</strong></td>
+            <td data-label="Annual Cost"><strong>$1,188</strong></td>
+            <td data-label="vs. Freed Savings">-</td>
+          </tr>
+          <tr>
+            <td data-label="Solution">Human Medical Scribe</td>
+            <td data-label="Monthly Cost">$3,000</td>
+            <td data-label="Annual Cost">$36,000</td>
+            <td data-label="vs. Freed Savings">Save $34,812/year</td>
+          </tr>
+          <tr>
+            <td data-label="Solution">Virtual Scribe Service</td>
+            <td data-label="Monthly Cost">$1,200</td>
+            <td data-label="Annual Cost">$14,400</td>
+            <td data-label="vs. Freed Savings">Save $13,212/year</td>
+          </tr>
+          <tr>
+            <td data-label="Solution">Other AI Scribes</td>
+            <td data-label="Monthly Cost">$299</td>
+            <td data-label="Annual Cost">$3,588</td>
+            <td data-label="vs. Freed Savings">Save $2,400/year</td>
+          </tr>
+        </table>
+      </div>
+      <h2>What's Included in Your $99/month:</h2>
+      <div class="key-points">
+        <ul>
+          <li><strong>Unlimited Visits:</strong> See 10 or 100 patients a day - same price</li>
+          <li><strong>All Specialties:</strong> No extra charges for specialty-specific features</li>
+          <li><strong>Mobile + Web:</strong> Use on any device, anywhere</li>
+          <li><strong>EHR Integration:</strong> Works with Epic, Cerner, any EHR</li>
+          <li><strong>Regular Updates:</strong> New features added monthly at no cost</li>
+          <li><strong>Data Security:</strong> HIPAA compliant with BAA included</li>
+          <li><strong>Customer Support:</strong> Email and chat support included</li>
+        </ul>
+      </div>
+      <a href="#" class="cta-button">Start Your Free Trial Today</a>
+    </div>
+
+    <!-- FAQ PAGE -->
+    <div class="page-content" id="faq">
+      <h1>Frequently Asked Questions About Freed AI Medical Scribe</h1>
+      <div class="quick-answer">
+        <strong>Quick Answer:</strong> Find answers to common questions about Freed's accuracy, security, EHR compatibility, pricing, and how it helps reduce clinician burnout while improving patient care.
+      </div>
+      <h2>Security & Compliance Questions:</h2>
+      <div class="faq-item" onclick="toggleFAQ(this)">
+        <div class="faq-question">Is Freed HIPAA compliant and secure?</div>
+        <div class="faq-answer">
+          <p><strong>Yes, Freed is fully HIPAA compliant.</strong> We maintain SOC 2 Type II certification, use end-to-end encryption, and never store audio recordings. All data is encrypted in transit and at rest, with US data staying in US servers and Canadian data in Canadian servers. We sign BAAs with all customers and undergo regular third-party security audits. Your patient conversations are processed in real-time and audio is immediately deleted.</p>
+        </div>
+      </div>
+      <div class="faq-item" onclick="toggleFAQ(this)">
+        <div class="faq-question">Does Freed store recordings of my patient visits?</div>
+        <div class="faq-answer">
+          <p><strong>No, Freed never stores audio recordings.</strong> This is a key privacy feature that sets us apart. Once your clinical note is generated (within 60 seconds), all audio data is permanently deleted. We only retain the text notes, which you fully control and can delete at any time.</p>
+        </div>
+      </div>
+      <div class="faq-item" onclick="toggleFAQ(this)">
+        <div class="faq-question">Who can access my patient notes?</div>
+        <div class="faq-answer">
+          <p><strong>Only you can access your notes.</strong> Freed employees cannot view your clinical documentation. Each account is isolated with encryption keys unique to you. Even our support team cannot access your patient data without your explicit permission for troubleshooting.</p>
+        </div>
+      </div>
+      <h2>Accuracy & Performance Questions:</h2>
+      <div class="faq-item" onclick="toggleFAQ(this)">
+        <div class="faq-question">How accurate is Freed with medical terminology?</div>
+        <div class="faq-answer">
+          <p><strong>Freed achieves 95% accuracy with medical terminology.</strong> Our AI is specifically trained on millions of medical encounters and correctly captures complex drug names, dosages, procedures, and diagnoses. It distinguishes between similar-sounding terms (like "hyper" vs "hypo") and accurately transcribes both brand and generic medication names. The system continuously improves through updates.</p>
+        </div>
+      </div>
+      <div class="faq-item" onclick="toggleFAQ(this)">
+        <div class="faq-question">Can Freed handle different accents and speaking styles?</div>
+        <div class="faq-answer">
+          <p><strong>Yes, Freed handles accents exceptionally well.</strong> Our AI is trained on diverse voice data from clinicians and patients worldwide. It accurately transcribes various accents, dialects, and speaking styles. The system also handles multiple speakers, interruptions, and background noise. If you have concerns about a specific accent, try it during your free trial.</p>
+        </div>
+      </div>
+      <div class="faq-item" onclick="toggleFAQ(this)">
+        <div class="faq-question">How fast does Freed generate notes?</div>
+        <div class="faq-answer">
+          <p><strong>Notes are ready in 60 seconds or less.</strong> As soon as you hit "End Visit," Freed processes the entire conversation and generates a complete, formatted clinical note. This is significantly faster than the 4-24 hours required by human scribes or other AI solutions.</p>
+        </div>
+      </div>
+      <h2>Integration & Compatibility Questions:</h2>
+      <div class="faq-item" onclick="toggleFAQ(this)">
+        <div class="faq-question">Does Freed work with Epic, Cerner, and other EHRs?</div>
+        <div class="faq-answer">
+          <p><strong>Yes, Freed works with 100% of EHRs.</strong> You can copy and paste notes into any EHR system immediately - no integration required. For Epic, Cerner, AthenaHealth, eClinicalWorks, and other major EHRs, we also offer direct integration options. You can start using Freed today with simple copy-paste, then add integration later if desired.</p>
+        </div>
+      </div>
+      <div class="faq-item" onclick="toggleFAQ(this)">
+        <div class="faq-question">Can I use Freed for telehealth visits?</div>
+        <div class="faq-answer">
+          <p><strong>Yes, Freed works perfectly for virtual visits.</strong> For telehealth appointments, Freed captures audio from your computer during video calls. It works with any platform - Zoom, Doxy.me, Teams, or EHR-integrated video. The same 60-second note generation applies to both in-person and virtual encounters.</p>
+        </div>
+      </div>
+      <div class="faq-item" onclick="toggleFAQ(this)">
+        <div class="faq-question">Does Freed work on mobile devices?</div>
+        <div class="faq-answer">
+          <p><strong>Yes, Freed has iOS and Android apps.</strong> Use your phone or tablet to capture visits anywhere - exam rooms, hospital rounds, home visits, or nursing facilities. The mobile apps work offline, syncing when you reconnect. You can also use Freed through any web browser on computers.</p>
+        </div>
+      </div>
+      <h2>Usage & Features Questions:</h2>
+      <div class="faq-item" onclick="toggleFAQ(this)">
+        <div class="faq-question">How much time does Freed really save?</div>
+        <div class="faq-answer">
+          <p><strong>Clinicians save an average of 2 hours per day.</strong> Based on data from 10,000+ users, doctors reduce documentation time by 70-80%. Instead of spending 10-15 minutes per patient on notes, Freed users spend 1-2 minutes reviewing and signing. This means finishing notes during clinic hours instead of "pajama time" at home.</p>
+        </div>
+      </div>
+      <div class="faq-item" onclick="toggleFAQ(this)">
+        <div class="faq-question">Can Freed handle my specialty?</div>
+        <div class="faq-answer">
+          <p><strong>Yes, Freed is optimized for all medical specialties.</strong> We have specialty-specific models for Family Medicine, Internal Medicine, Psychiatry, Cardiology, Orthopedics, Pediatrics, OB/GYN, Surgery, Emergency Medicine, and more. Each model understands specialty-specific terminology, exam components, and documentation requirements. The AI adapts to your specific needs.</p>
+        </div>
+      </div>
+      <div class="faq-item" onclick="toggleFAQ(this)">
+        <div class="faq-question">Does Freed learn my documentation style?</div>
+        <div class="faq-answer">
+          <p><strong>Yes, Freed learns and adapts to your preferences.</strong> Every edit you make teaches the AI your terminology choices, note structure, and documentation style. Within a few uses, Freed generates notes that match how you would write them. You can also create custom templates for different visit types.</p>
+        </div>
+      </div>
+      <h2>Pricing & Trial Questions:</h2>
+      <div class="faq-item" onclick="toggleFAQ(this)">
+        <div class="faq-question">How does the 7-day free trial work?</div>
+        <div class="faq-answer">
+          <p><strong>The trial includes full access with no credit card required.</strong> Sign up with just your email, download the app or use the web version, and start capturing visits immediately. You get unlimited visits for 7 days with all features enabled. After the trial, you can subscribe for $99/month or cancel with no obligation.</p>
+        </div>
+      </div>
+      <div class="faq-item" onclick="toggleFAQ(this)">
+        <div class="faq-question">Are there any hidden fees or per-visit charges?</div>
+        <div class="faq-answer">
+          <p><strong>No hidden fees - just $99/month for unlimited use.</strong> Whether you see 5 patients or 50 patients per day, the price is the same. All features are included: every specialty, unlimited visits, mobile apps, web access, customer support, and regular updates. No setup fees, no cancellation fees.</p>
+        </div>
+      </div>
+      <div class="faq-item" onclick="toggleFAQ(this)">
+        <div class="faq-question">Can multiple providers share an account?</div>
+        <div class="faq-answer">
+          <p><strong>Each provider needs their own account for security and customization.</strong> This ensures notes are private, the AI learns each provider's style, and everyone has their own secure login. We offer group discounts for practices with 5 or more providers - contact sales for custom pricing.</p>
+        </div>
+      </div>
+      <a href="#pricing" class="cta-button" onclick="showPage('pricing')">Start Your Free Trial</a>
+    </div>
+
+    <!-- COMPARISON PAGE -->
+    <div class="page-content" id="comparison">
+      <h1>How does Freed AI Compare to Other AI Medical Scribes?</h1>
+      <div class="quick-answer">
+        <strong>Quick Answer:</strong> Freed offers the best combination of accuracy (95%), affordability ($99/month), speed (60-second notes), and privacy (no audio storage) compared to Nuance DAX, DeepScribe, Suki, and human scribes.
+      </div>
+      <div class="table-wrapper">
+        <h2>Detailed Comparison: Freed vs Other Solutions</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th style="background: #28a745; color: white;">Freed</th>
+              <th>Nuance DAX</th>
+              <th>DeepScribe</th>
+              <th>Suki</th>
+              <th>Human Scribe</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Feature"><strong>Monthly Cost</strong></td>
+              <td data-label="Freed" style="background: #e8f5e9;"><strong>$99</strong></td>
+              <td data-label="Nuance DAX">$200-400</td>
+              <td data-label="DeepScribe">$149-299</td>
+              <td data-label="Suki">$199-399</td>
+              <td data-label="Human Scribe">$2,000-4,000</td>
+            </tr>
+            <tr>
+              <td data-label="Feature"><strong>Setup Time</strong></td>
+              <td data-label="Freed" style="background: #e8f5e9;"><strong>< 5 minutes</strong></td>
+              <td data-label="Nuance DAX">2-4 weeks</td>
+              <td data-label="DeepScribe">1-2 weeks</td>
+              <td data-label="Suki">1 week</td>
+              <td data-label="Human Scribe">2-4 weeks</td>
+            </tr>
+            <tr>
+              <td data-label="Feature"><strong>Note Delivery</strong></td>
+              <td data-label="Freed" style="background: #e8f5e9;"><strong>60 seconds</strong></td>
+              <td data-label="Nuance DAX">4 hours</td>
+              <td data-label="DeepScribe">30 minutes</td>
+              <td data-label="Suki">2-5 minutes</td>
+              <td data-label="Human Scribe">24 hours</td>
+            </tr>
+            <tr>
+              <td data-label="Feature"><strong>Audio Storage</strong></td>
+              <td data-label="Freed" style="background: #e8f5e9;"><strong>Never stored</strong></td>
+              <td data-label="Nuance DAX">Temporary storage</td>
+              <td data-label="DeepScribe">Stored for QA</td>
+              <td data-label="Suki">Optional storage</td>
+              <td data-label="Human Scribe">N/A</td>
+            </tr>
+            <tr>
+              <td data-label="Feature"><strong>Learning Capability</strong></td>
+              <td data-label="Freed" style="background: #e8f5e9;"><strong>Yes - Adapts to you</strong></td>
+              <td data-label="Nuance DAX">No</td>
+              <td data-label="DeepScribe">Limited</td>
+              <td data-label="Suki">No</td>
+              <td data-label="Human Scribe">Yes</td>
+            </tr>
+            <tr>
+              <td data-label="Feature"><strong>Accuracy Rate</strong></td>
+              <td data-label="Freed" style="background: #e8f5e9;"><strong>95%</strong></td>
+              <td data-label="Nuance DAX">95%</td>
+              <td data-label="DeepScribe">95%</td>
+              <td data-label="Suki">94%</td>
+              <td data-label="Human Scribe">90-95%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2>Why Clinicians Choose Freed*: Real Testimonials</h2>
+      <div class="key-points">
+        <h3>Switching from Human Scribes:</h3>
+        <p><em>"I was spending $3,500/month on a human scribe who was only available during clinic hours. Freed costs $99/month, works for all my visits including hospital rounds, and the notes are actually more detailed. It's a no-brainer."</em> - Dr. Sarah Chen, Internal Medicine</p>
+      </div>
+      <div class="key-points">
+        <h3>Switching from Nuance DAX:</h3>
+        <p><em>"DAX took 4 hours to return notes, which meant I was still doing pajama time documentation. With Freed, I review and sign notes before the patient leaves. Plus it's $300 less per month."</em> - Dr. Michael Rodriguez, Family Medicine</p>
+      </div>
+      <div class="key-points">
+        <h3>Switching from DeepScribe:</h3>
+        <p><em>"DeepScribe required IT integration that took 3 weeks. Freed worked immediately with copy-paste, then we added the integration later. The learning feature means notes now sound exactly like I write them."</em> - Dr. Jennifer Park, Psychiatry</p>
+      </div>
+      <h2>Feature Deep Dive: What Makes Freed Better</h2>
+      <h3>1. Instant Note Generation</h3>
+      <p>While competitors make you wait hours for notes, Freed processes everything in 60 seconds. This means you can review, edit, and sign notes before moving to your next patient. No more end-of-day documentation pileup.</p>
+      <h3>2. Zero Audio Storage</h3>
+      <p>Freed is the only major AI scribe that never stores recordings. Your patient conversations are processed in real-time and immediately deleted. This provides unmatched privacy for both you and your patients.</p>
+      <h3>3. Learning Algorithm</h3>
+      <p>Freed learns your documentation style with every edit. After a few visits, notes sound exactly like you wrote them. Competitors provide generic outputs that require extensive editing.</p>
+      <h3>4. Universal EHR Compatibility</h3>
+      <p>Start with simple copy-paste in any EHR today. Add direct integration when you're ready. Other solutions require specific EHRs or complex IT projects before you can even begin.</p>
+      <h3>5. Transparent Pricing</h3>
+      <p>$99/month for everything. No per-visit fees, no setup costs, no premium tiers. Competitors often have hidden fees or variable pricing that can surprise you.</p>
+      <a href="#pricing" class="cta-button" onclick="showPage('pricing')">See Why 20,000+ Doctors Choose Freed - Start Free Trial</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Freed AI Medical Scribe. All rights reserved.</p>
+    <p><a href="#privacy-policy">Privacy Policy</a> | <a href="#terms-of-service">Terms of Service</a> | <a href="#hipaa-compliance">HIPAA Compliance</a></p>
+  </footer>
+
+  <!-- Navigation + Schema injection script (deferred) -->
+  <script defer>
+    function showPage(pageId) {
+      document.querySelectorAll('.page-content').forEach(p => p.classList.remove('active'));
+      document.getElementById(pageId).classList.add('active');
+      document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+      document.querySelector(`[data-page="${pageId}"]`).classList.add('active');
+      window.scrollTo(0,0);
+    }
+    function toggleFAQ(el) { el.classList.toggle('active'); }
+
+    // SoftwareApplication schema
+    (function(){
+      const schema = {
+        "@context":"https://schema.org",
+        "@type":"SoftwareApplication",
+        "name":"Freed AI Medical Scribe",
+        "applicationCategory":"MedicalApplication",
+        "offers":{ "@type":"Offer","price":"99","priceCurrency":"USD" },
+        "aggregateRating":{ "@type":"AggregateRating","ratingValue":"4.9","reviewCount":"10000" }
+      };
+      const s=document.createElement('script');
+      s.type='application/ld+json';
+      s.text=JSON.stringify(schema);
+      document.head.appendChild(s);
+    })();
+  </script>
+
+  <!-- ====== FAQPage Schema ====== -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"Is Freed HIPAA compliant and secure?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Yes, Freed is fully HIPAA compliant with SOC 2 Type II, end-to-end encryption, BAAs, and zero audio storage."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Does Freed store recordings of my patient visits?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"No, Freed never stores audio recordings. All audio is deleted immediately after note generation."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- ====== BreadcrumbList Schema ====== -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://freed54.wordpress.com#home"},
+      {"@type":"ListItem","position":2,"name":"How It Works","item":"https://freed54.wordpress.com#features"},
+      {"@type":"ListItem","position":3,"name":"Pricing","item":"https://freed54.wordpress.com#pricing"},
+      {"@type":"ListItem","position":4,"name":"FAQ","item":"https://freed54.wordpress.com#faq"},
+      {"@type":"ListItem","position":5,"name":"How It Compares","item":"https://freed54.wordpress.com#comparison"}
+    ]
+  }
+  </script>
+<!-- ====== HowTo Schema ====== -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"HowTo",
+    "name":"How Freed AI Scribe Works",
+    "step":[
+      { "@type":"HowToStep","name":"Press Capture Visit","text":"Tap the 'Capture Visit' button to begin recording your patient encounter." },
+      { "@type":"HowToStep","name":"AI listens","text":"Our AI actively listens, filters noise, and transcribes medical details in real time." },
+      { "@type":"HowToStep","name":"Note generated","text":"Within 60 seconds of ending the visit, Freed generates a full SOAP note for review." }
+    ]
+  }
+  </script>
+
+<!-- New: WebSite + SearchAction -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "url":"https://freed54.wordpress.com",
+    "potentialAction": {
+      "@type":"SearchAction",
+      "target":"https://freed54.wordpress.com/?s={search_term_string}",
+      "query-input":"required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- New: Product + Review -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Product",
+    "name":"Freed AI Medical Scribe",
+    "image":"https://freed54.wordpress.com/images/OG.png",
+    "description":"AI-powered medical scribe that saves doctors 2+ hours daily with 95% accuracy and zero audio storage.",
+    "aggregateRating":{
+      "@type":"AggregateRating",
+      "ratingValue":"4.9",
+      "reviewCount":"10000"
+    },
+    "review":[
+      {
+        "@type":"Review",
+        "author":"Dr. Sarah Chen",
+        "datePublished":"2025-02-15",
+        "reviewBody":"Freed transformed our workflow—notes are ready instantly, and the accuracy is outstanding.",
+        "name":"Game changer for clinic efficiency",
+        "reviewRating":{
+          "@type":"Rating",
+          "ratingValue":"5",
+          "bestRating":"5"
+        }
+      },
+      {
+        "@type":"Review",
+        "author":"Dr. Michael Rodriguez",
+        "datePublished":"2025-03-10",
+        "reviewBody":"Easy to set up, integrates seamlessly, and saves me hours every week.",
+        "name":"Incredible time saver",
+        "reviewRating":{
+          "@type":"Rating",
+          "ratingValue":"5",
+          "bestRating":"5"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- New: ImageObject for key images -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ImageObject",
+    "contentUrl":"https://freed54.wordpress.com/images/OG.png",
+    "license":"https://freed54.wordpress.com/terms-of-service",
+    "acquireLicensePage":"https://freed54.wordpress.com/contact"
+  }
+  </script>
+
+  <!-- New: Product Schema tie‑in for logo -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Freed AI",
+    "url":"https://freed54.wordpress.com",
+    "logo":"https://freed54.wordpress.com/images/OG.png"
+  }
+  </script>
+
+</body>
+</html>
