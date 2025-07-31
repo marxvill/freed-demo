@@ -11,12 +11,13 @@ jobs:
     permissions:
       contents: write
     steps:
-       uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
+
       - name: Create FAQ file
         run: |
-          mkdir -p public/auto-faqs
-         mkdir -p auto-faqs
-echo "<h2>Does Freed work with Epic?</h2><p>Yes it does! Here's how...</p>" > auto-faqs/freed-epic.html
+          mkdir -p auto-faqs
+          echo "<h2>Does Freed work with Epic?</h2><p>Yes it does! Here's how...</p>" > auto-faqs/freed-epic.html
           git config user.name "GEO Bot"
           git config user.email "action@github.com"
           git add .
