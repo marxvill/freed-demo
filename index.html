@@ -752,6 +752,17 @@
     "logo":"https://freed54.wordpress.com/images/OG.png"
   }
   </script>
-
+<section id="auto-faq">
+  <h2>Auto-Generated FAQs</h2>
+  <div id="auto-generated-faqs">
+    <script>
+      fetch('/public/auto-faqs/freed-epic.html')
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById('auto-generated-faqs').innerHTML = html;
+        });
+    </script>
+  </div>
+</section>
 </body>
 </html>
