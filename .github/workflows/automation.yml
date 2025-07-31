@@ -11,11 +11,12 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v3
-      - name: Generate timestamp
-        run: |
-          echo "Generated at: $(date)" > last-run.txt
-          git config user.name "GEO Bot"
-          git config user.email "action@github.com"
-          git add .
-          git commit -m "🤖 Auto-update" || echo "No changes"
-          git push
+      name: Create FAQ file
+  run: |
+    mkdir -p public/auto-faqs
+    echo "<h2>Does Freed work with Epic?</h2><p>Yes it does! Here's how...</p>" > public/auto-faqs/freed-epic.html
+    git config user.name "GEO Bot"
+    git config user.email "action@github.com"
+    git add .
+    git commit -m "🤖 Auto-added FAQ: Freed + Epic" || echo "No changes"
+    git push
