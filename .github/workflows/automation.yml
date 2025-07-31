@@ -1,0 +1,21 @@
+name: GEO Automation
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */6 * * *'
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+      - name: Generate timestamp
+        run: |
+          echo "Generated at: $(date)" > last-run.txt
+          git config user.name "GEO Bot"
+          git config user.email "action@github.com"
+          git add .
+          git commit -m "🤖 Auto-update" || echo "No changes"
+          git push
